@@ -26,7 +26,7 @@ class WifiParamsType extends AbstractType
             ->add('password', TextType::class)
             ->add('isHidden', CheckboxType::class, [
                 'label' => 'Hidden wiFi network',
-                 'required' => false
+                'required' => false
             ])
         ;
     }
