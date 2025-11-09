@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Création QR Code!{% endblock %}
+
+{% block body %}
+    <div class="w-50 mx-auto border rounded p-5 m-4">
+        <h1 class="mb-5 text-center">WiFi QR Code Generator</h1>
+            {{ form_start(form, { attr: { 'data-turbo': 'false' } }) }}
+                <div>{{ form_row(form.networkName)}}</div>
+                <div>{{ form_row(form.encryption)}}</div>
+                <div>{{ form_row(form.password)}}</div>
+                <div>{{ form_row(form.isHidden)}}</div>
+
+                <button type="submit" class="btn btn-primary btn-lg w-100">Generate QR Code</button>
+            {{ form_end(form)}}
+    </div>
+{% endblock %}

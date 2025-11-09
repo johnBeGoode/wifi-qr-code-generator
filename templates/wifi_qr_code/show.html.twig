@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Affichage QR Code!{% endblock %}
+
+{% block body %}
+    <div>
+        <img src="{{ qrCode }}" alt="qr Code" width=400 height=400>
+    </div>
+{% endblock %}
